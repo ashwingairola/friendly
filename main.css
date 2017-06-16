@@ -1,0 +1,233 @@
+/*
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
+
+html,body {
+	height: 100%;
+	width: 100%;
+	font-family: sans-serif;
+}
+
+
+.wrapper {
+	max-width: 700px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+h1 {
+	text-align: center;
+}
+
+.box {
+	height: 500px;
+	background-color: #e7e7e7;
+	border: 1px solid rgba(0,0,0,0.87);
+}
+
+/* Add Custom CSS Below this line */
+/*
+header {
+	background-color: #4267b2;
+  height: 30px;
+}
+footer {
+	background-color: rgba(0,0,0,0.87);
+  height: 30px;
+}
+*/
+
+body, button, input, label, select, td, textarea {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 12px;
+}
+
+#wrapper {
+	margin-top: 16px;
+	margin-bottom: 16px;
+}
+
+#main,
+#menu,
+#sidebar {
+	height: 600px;
+}
+
+#main {background-color: orange;}
+#menu {background-color: pink;}
+#sidebar { background-color: yellow;}
+
+#main,
+#menu,
+#sidebar {
+  background-color: #e9ebee;
+}
+
+#main {
+	overflow: auto;
+}
+
+#header {
+	background-color: #4267b2;
+	height: 43px;
+}
+
+#header a {
+	color: white;
+}
+
+#header .dropdown .dropdown-menu a {
+	color: black;
+}
+
+#header ul .glyphicon {
+    font-size: 20px;
+}
+
+#search-box {
+	padding-top: 10px;
+}
+
+#search-box .form-control, .btn.btn-default {
+	height: 26px;
+	padding: 3px 12px;
+}
+
+.thumbnail {		/* For the profile photo in the navbar on top. */
+	height: 25px;
+	width: 25px;
+	border: none;
+	background-color: transparent;
+	padding: 0;
+	margin: 0 5px 0 0;
+	display: inline;
+}
+
+body {
+	padding-top: 60px;
+	padding-bottom: 40px;
+} /* In order to prevent overlay due to the fixed navbar on top of the page. */
+
+.list-heading {
+	padding: 20px 15px 0 15px;
+}
+
+.nav.nav-pills.nav-stacked a {
+	color: black;
+	line-height: 10px;
+}
+
+.nav.nav-pills.nav-stacked p {
+	font-weight: bold;
+}
+
+.nav.nav-pills.nav-stacked {
+	padding: 10px 10px 0 10px;
+}
+
+#menu .glyphicon {
+	font-size: 16px;
+}
+
+.panel-body .glyphicon {
+	margin-left: 10px;
+	margin-right: 4px;
+}
+
+.text-post {
+    margin-bottom: 15px;
+    margin-top: 0;
+}
+
+.image-post {
+	margin-bottom: 15px;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
+}
+
+.panel-heading .media .media-left .media-object {
+	height: 40px;
+	width: 40px;
+}
+
+.comment-input .media-left .media-object, .comment .media-left .media-object {
+	height: 32px;
+	width: 32px;
+}
+
+.post-time {
+	margin-top: 5px;
+}
+
+.post-time *{
+	color: #90949c;
+}
+
+.post-title, .comment-content {
+	margin: 0;
+}
+
+.comment-box {
+	width: 100%;
+	height: 32px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.media-body .poster-name, .media-body .comment-name {
+	font-weight: bold;
+}
+
+.reply-list .comment-reply .media-left .media-object, .reply-list .reply-input .media-left .media-object {
+	height: 20px;
+	width: 20px;
+}
+
+.reply-box {
+	width: 100%;
+	height: 20px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.reply-list .comment-reply {
+	margin-top: 0;
+	margin-bottom: 5px;
+}
+
+.reply-list {
+	margin-left: 32px;
+	margin-top: 5px;
+	padding-left: 10px;
+	border-left: 2px solid #e5e5e5;
+}
+
+.post-info {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.post-info a {
+	color: #90949c;
+	font-weight: normal;
+	margin-left: 3px;
+}
+
+.post-info .glyphicon, .post-options .glyphicon{
+	margin: 0;
+}
+
+.post-options {
+	margin-top: 10px;
+	font-weight: bold;
+}
+
+.post-options a {
+	color: #4b4f56;
+	margin-right: 40px;
+}

@@ -1,0 +1,565 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Friendly</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="main.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body id="top">
+    <div class="container">
+      <header>
+        <nav class="navbar navbar-default navbar-fixed-top" id="header">
+          <div class="container-fluid container">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="#">Friendly</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <!-- Search bar -->
+                <div class="col-lg-4" id="search-box">
+                  <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search Friendly">
+                    <span class="input-group-btn">
+                      <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                  </div><!-- /input-group -->
+                </div><!-- /.col-lg-6 -->
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="#"><img src="profile_photo.jpg" class="thumbnail">Ashwin</a></li>
+                <li title="Home"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
+                <li title="Friend Requests"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
+                <li title="Messages"><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
+                <li title="Notifications"><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
+                <li title="Help"><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
+                <li title="Options" class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+      </header>
+
+      <div class="container-fluid" id="wrapper">
+        <div class="row">
+
+          <div class="col-md-3">
+            <div id="menu">
+              <ul class="nav nav-pills nav-stacked">
+                <li role="presentation">
+                  <a href="#">
+                    <span>
+                      <span class="glyphicon glyphicon-list-alt" aria-hidden="true"></span> News Feed
+                    </span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Messages
+                    <span class="badge pull-right">20+</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-pills nav-stacked">
+                <p class="list-heading">Shortcuts</p>
+                <li role="presentation">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-font" aria-hidden="true"></span> AcadView
+                    <span class="badge pull-right">5</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> HTML, CSS Group
+                    <span class="badge pull-right">20+</span>
+                  </a>
+                </li>
+                <li role="presentation">
+                  <a href="#">
+                    <span class="glyphicon glyphicon-bold" aria-hidden="true"></span> Bootstrap Fundas
+                    <span class="badge pull-right">7</span>
+                  </a>
+                </li>
+              </ul>
+              <ul class="nav nav-pills nav-stacked">
+                <p class="list-heading">Explore</p>
+                <li role="presentation"><a href="#">Groups</a></li>
+                <li role="presentation"><a href="#">Events</a></li>
+                <li role="presentation"><a href="#">Pages</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div id="main">
+              <!-- This is a panel for displaying posts -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="pushpit.jpeg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="post-title"><a href="#" class="poster-name">Pushpit Virmani</a></h5>
+                        <div class="post-time">
+                          <a href="#">Just now</a>
+                          <a href="#"><span class="glyphicon glyphicon-globe"></span></a>
+                        </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <div><h3 class="text-post">Searching for a new laptop online is basically forcing your current computer to dig its own grave. </h3></div>
+                    <div>
+                      <div class="post-info">
+                        <span class="glyphicon glyphicon-thumbs-up"></span><a href="#" class="likes">20</a>
+                        <span class="pull-right">
+                          <a href="#">6 Comments</a>
+                          <a href="#">1 Share</a>
+                        </span>
+                      </div>
+                      <div class="post-options">
+                        <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+                        <a href="#"><span class="glyphicon glyphicon-comment"></span> Comment</a>
+                        <a href="#"><span class="glyphicon glyphicon-share"></span> Share</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <!-- Write a comment... -->
+                  <div class="media comment-input">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <input class="comment-box" placeholder="Write a comment...">
+                    </div>
+                  </div>
+                  <!-- Comment input box ends -->
+                  <!-- A comment -->
+                  <div class="media comment">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="comment-content"><span><a href="#" class="comment-name">Ashwin Gairola</a> </span>True dat...</p>
+                      <div>
+                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of comment -->
+                  <!-- List of replies (nested comments) -->
+                  <ul class="media-list reply-list">
+                    <!-- A reply to the comment above -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="pushpit.jpeg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Pushpit Virmani</a> </span>True dat...</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- End of reply -->
+                    <!-- Another reply -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="gunslinger.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Man with No Name</a> </span>True dat...</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- End of second reply -->
+                    <!-- Third reply -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="profile_photo.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Ashwin Gairola</a> </span>Wait... Who are you?</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- End of third reply -->
+                    <!-- Fourth reply -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="gunslinger.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Man with No Name</a> </span>And then, he was gone...</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Write a reply... -->
+                    <li class="media reply-input">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="profile_photo.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <input class="reply-box" placeholder="Write a reply...">
+                      </div>
+                    </li>
+                    <!-- Reply box ends -->
+                  </ul>
+                  <!-- End of replies -->
+                  <!-- Another comment -->
+                  <div class="media comment">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="samyak.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="comment-content"><span><a href="#" class="comment-name">Samyak Jain</a> </span>A very astute observation! Very true, very true indeed.</p>
+                      <div>
+                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of second comment -->
+                </div> <!-- Panel footer ends here -->
+              </div>
+              <!-- End of panel -->
+              <!-- Another similar panel -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="tomar.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="post-title"><a href="#" class="poster-name">Aman Tomar</a></h5>
+                      <div class="post-time">
+                        <a href="#">Just now</a>
+                        <a href="#"><span class="glyphicon glyphicon-globe"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <blockquote>
+                      <p>Don't you know the first law of physics? Anything that's fun costs at least eight dollars.</p>
+                      <footer>Eric Cartman, <cite title="Source Title">South Park</cite></footer>
+                    </blockquote>
+                  </div>
+                  <div>
+                    <div class="post-info">
+                      <span class="glyphicon glyphicon-thumbs-up"></span><a href="#" class="likes">20</a>
+                      <span class="pull-right">
+                        <a href="#">6 Comments</a>
+                        <a href="#">1 Share</a>
+                      </span>
+                    </div>
+                    <div class="post-options">
+                      <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+                      <a href="#"><span class="glyphicon glyphicon-comment"></span> Comment</a>
+                      <a href="#"><span class="glyphicon glyphicon-share"></span> Share</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <!-- Write a comment... -->
+                  <div class="media comment-input">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <input class="comment-box" placeholder="Write a comment...">
+                    </div>
+                  </div>
+                  <!-- Comment input box ends -->
+                </div> <!-- Panel footer ends here -->
+              </div>
+              <!-- End of panel -->
+              <!-- A third panel for image post -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="jon_snow.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="post-title"><a href="#" class="poster-name">Rudransh Dobhal</a></h5>
+                      <div class="post-time">
+                        <a href="#">Yesterday 11:00 pm</a>
+                        <a href="#"><span class="glyphicon glyphicon-globe"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <div class="image-post">
+                      <img src="good_morning.jpg" class="img-responsive" alt="Responsive image">
+                    </div>
+                  </div>
+                  <div>
+                    <div class="post-info">
+                      <span class="glyphicon glyphicon-thumbs-up"></span><a href="#" class="likes">20</a>
+                      <span class="pull-right">
+                        <a href="#">6 Comments</a>
+                        <a href="#">1 Share</a>
+                      </span>
+                    </div>
+                    <div class="post-options">
+                      <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+                      <a href="#"><span class="glyphicon glyphicon-comment"></span> Comment</a>
+                      <a href="#"><span class="glyphicon glyphicon-share"></span> Share</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <!-- Write a comment... -->
+                  <div class="media comment-input">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <input class="comment-box" placeholder="Write a comment...">
+                    </div>
+                  </div>
+                  <!-- Comment input box ends -->
+                </div> <!-- Panel footer ends here -->
+              </div>
+              <!-- End of panel -->
+              <!-- A panel for embedded video -->
+              <div class="panel panel-default">
+                <div class="panel-heading">
+                  <div class="media">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="jon_snow.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <h5 class="post-title"><a href="#" class="poster-name">Rudransh Dobhal</a></h5>
+                      <div class="post-time">
+                        <a href="#">Yesterday 11:00 pm</a>
+                        <a href="#"><span class="glyphicon glyphicon-globe"></span></a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-body">
+                  <div>
+                    <div class="image-post">
+                      <p>Super-hyped for this!!!</p>
+                      <div class="embed-responsive embed-responsive-16by9">
+                        <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/giYeaKsXnsI" allowfullscreen></iframe>
+                      </div>
+                    </div>
+                  </div>
+                  <div>
+                    <div class="post-info">
+                      <span class="glyphicon glyphicon-thumbs-up"></span><a href="#" class="likes">20</a>
+                      <span class="pull-right">
+                        <a href="#">6 Comments</a>
+                        <a href="#">1 Share</a>
+                      </span>
+                    </div>
+                    <div class="post-options">
+                      <a href="#"><span class="glyphicon glyphicon-thumbs-up"></span> Like</a>
+                      <a href="#"><span class="glyphicon glyphicon-comment"></span> Comment</a>
+                      <a href="#"><span class="glyphicon glyphicon-share"></span> Share</a>
+                    </div>
+                  </div>
+                </div>
+                <div class="panel-footer">
+                  <!-- Write a comment... -->
+                  <div class="media comment-input">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <input class="comment-box" placeholder="Write a comment...">
+                    </div>
+                  </div>
+                  <!-- Comment input box ends -->
+                  <!-- A comment -->
+                  <div class="media comment">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="profile_photo.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="comment-content"><span><a href="#" class="comment-name">Ashwin Gairola</a> </span>So where are you on Game of Thrones right now, cousin?</p>
+                      <div>
+                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of comment -->
+                  <!-- List of replies (nested comments) -->
+                  <ul class="media-list reply-list">
+                    <!-- A reply to the comment above -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="jon_snow.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Rudransh Dobhal</a> </span>Just started watching! I'm on Season 1, Episode 3 right now!</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- End of second reply -->
+                    <!-- Second reply -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="jon_snow.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Rudransh Dobhal</a> </span>I really hope Eddard Stark wins the Iron Throne!</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Third reply -->
+                    <li class="media comment-reply">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="profile_photo.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <p class="comment-content"><span><a href="#" class="comment-name">Ashwin Gairola</a> </span>Oh, my sweet summer-child....</p>
+                        <div>
+                          <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                        </div>
+                      </div>
+                    </li>
+                    <!-- Write a reply... -->
+                    <li class="media reply-input">
+                      <div class="media-left">
+                        <a href="#">
+                          <img class="media-object" src="profile_photo.jpg" alt="...">
+                        </a>
+                      </div>
+                      <div class="media-body">
+                        <input class="reply-box" placeholder="Write a reply...">
+                      </div>
+                    </li>
+                    <!-- Reply box ends -->
+                  </ul>
+                  <!-- End of replies -->
+                  <!-- Another comment -->
+                  <div class="media comment">
+                    <div class="media-left">
+                      <a href="#">
+                        <img class="media-object" src="gunslinger.jpg" alt="...">
+                      </a>
+                    </div>
+                    <div class="media-body">
+                      <p class="comment-content"><span><a href="#" class="comment-name">Man with No Name</a> </span>I hope Daryl doesn't die this season...</p>
+                      <div>
+                        <span> <a href="#">Like </a></span> <span> <a href="#">Comment </a></span>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- End of second comment -->
+                </div> <!-- Panel footer ends here -->
+              </div>
+              <!-- End of panel -->
+            </div>
+          </div>
+          <div class="col-md-3"><div id="sidebar"></div></div>
+        </div>
+      </div>
+
+      <footer>
+        <nav class="nav navbar-default navbar-fixed-bottom">
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation"><a href="#top">Go to Top</a></li>
+            <li role="presentation"><a href="#">About Us</a></li>
+            <li role="presentation"><a href="#">Home</a></li>
+            <li role="presentation"><a href="#">Privacy</a></li>
+            <li role="presentation"><a href="#">Advertising</a></li>
+            <li role="presentation"><a href="#">Cookies</a></li>
+            <li role="presentation"><a href="#">Ad Choices</a></li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
