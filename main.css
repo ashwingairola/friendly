@@ -58,7 +58,11 @@ body, button, input, label, select, td, textarea {
 
 #main {background-color: orange;}
 #menu {background-color: pink;}
-#sidebar { background-color: yellow;}
+
+#sidebar{
+  background-color: yellow;
+  padding: 12px;
+}
 
 #main,
 #menu,
@@ -230,4 +234,35 @@ body {
 .post-options a {
 	color: #4b4f56;
 	margin-right: 40px;
+}
+
+/* News ticker */
+#news-tab {
+  border: none;
+}
+
+#news-tab a {
+  font-size: 16px;
+  padding: 4px;
+  margin-left: 4px;
+  color: #90949c;
+  background-color: transparent;
+  border: none;
+}
+
+#news-tab .active a {
+  border-bottom: 2px solid #4267b2;
+  color: #4267b2;
+}
+
+.news-header {
+  display: flex;
+}
+
+.trending {
+  flex: 1;
+  font-size: 13px;
+  font-weight: bold;
+  padding-top: 5px;
+  color: #90949c;
 }
