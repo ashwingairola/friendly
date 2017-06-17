@@ -279,3 +279,11 @@ body {
   padding: 0;
   border: none;
 }
+
+.comment-options a {
+  margin-right: 5px;
+}
+
+.comment-likes, .comment-time {
+  color: #90949c;
+}
