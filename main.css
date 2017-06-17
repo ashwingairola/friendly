@@ -61,7 +61,6 @@ body, button, input, label, select, td, textarea {
 
 #sidebar{
   background-color: yellow;
-  padding: 12px;
 }
 
 #main,
@@ -75,8 +74,7 @@ body, button, input, label, select, td, textarea {
 }
 
 #header {
-	background-color: #4267b2;
-	height: 43px;
+	background-color: #3b5998;
 }
 
 #header a {
@@ -136,10 +134,10 @@ body {
 	font-size: 16px;
 }
 
-.panel-body .glyphicon {
+/*.panel-body .glyphicon {
 	margin-left: 10px;
 	margin-right: 4px;
-}
+}*/
 
 .text-post {
     margin-bottom: 15px;
@@ -265,4 +263,19 @@ body {
   font-weight: bold;
   padding-top: 5px;
   color: #90949c;
+}
+
+.news-icon {
+  float: left;
+  margin-left: 0;
+  margin-right: 5px;
+}
+
+.news-content {
+  overflow: hidden;
+}
+
+.news {
+  padding: 0;
+  border: none;
 }
