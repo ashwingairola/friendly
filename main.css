@@ -289,11 +289,34 @@ body {
 }
 
 @media screen and (max-width: 1199px) and (min-width: 768px) {
-  #large-navbar {
+  #friendly-navbar {
     display: flex !important;
+    flex-direction: row;
+  }
+
+  #top-menu {
+    float: right;
+    flex: 1;
   }
 
   #search-box {
     max-width: 300px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #header {
+    max-height: 43px;
+    min-height: 43px;
+  }
+
+  #header * {
+    padding-top: 0;
+    padding-bottom: 0;
+  }
+
+  #header .container.container-fluid {
+    margin-top: 7px;
+    margin-bottom: 7px;
   }
 }
