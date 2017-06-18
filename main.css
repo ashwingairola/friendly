@@ -8,30 +8,31 @@ body, button, input, label, select, td, textarea {
 	margin-bottom: 16px;
 }
 
+body {
+  background-color: #e9ebee;
+}
+
 #main,
 #menu,
 #sidebar {
 	height: 600px;
 }
 
-#main {background-color: orange;}
-#menu {background-color: pink;}
-
-#menu img {
+#menu img {                       /* Images for menu items */
   height: 20px;
   width: 20px;
   margin-right: 5px;
-  -webkit-transition: background-color 0.2s;
-  transition: background-color 0.2s;
-  -webkit-transition: border 0.2s;
-  transition: border 0.5s;
 }
 
-#menu a {
-  padding: 5px;
+#menu a {                          /* Link styles for menu items */
+  padding: 3px;
+  border: 1px solid transparent;
+  border-radius: 2px;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 
-#menu li:hover {                    /* Hovering over a menu item will cause these styles to be applied. */
+#menu a:hover {                    /* Hovering over a menu item will cause these styles to be applied. */
   border: 1px solid #e5e5e5;
   border-radius: 2px;
   background-color: #fcfdff;
@@ -43,10 +44,11 @@ body, button, input, label, select, td, textarea {
   background-color: #e9ebee;
 }
 
-#main {
+#main {                             /* Adjusting the overflow of columns in the container. */
 	overflow: auto;
 }
 
+/* Header styles */
 #header {
 	background-color: #3b5998;
 }
@@ -140,6 +142,16 @@ body {
     display: none;
 }
 
+.panel.panel-default {
+  margin-bottom: 10px;
+}
+
+.panel-default>.panel-heading {
+  background-color: #fff;
+  border-bottom: none;
+  padding: 15px;
+}
+
 .panel-heading .media .media-left .media-object {
 	height: 40px;
 	width: 40px;
@@ -160,6 +172,10 @@ body {
 
 .post-title, .comment-content {
 	margin: 0;
+}
+
+.post-title {
+  color: #90949c;
 }
 
 .comment-box {
@@ -245,6 +261,10 @@ body {
   display: flex;
 }
 
+.panel-heading.news-header {
+  padding: 5px 5px 5px 10px;
+}
+
 .trending {
   flex: 1;
   font-size: 13px;
@@ -328,4 +348,13 @@ body {
   font-size: 11px;
   background-color: red;
   padding: 1px 6px;
+}
+
+.carousel {
+  margin-bottom: 10px;
+}
+
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+    height: 300px;
 }
