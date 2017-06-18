@@ -48,13 +48,37 @@
                 <div id="top-menu">
                   <ul class="nav navbar-nav navbar-right">
                     <li><a href="#"><img src="profile_photo.jpg" class="thumbnail">Ashwin</a></li>
-                    <li title="Home"><a href="#"><span class="glyphicon glyphicon-home" aria-hidden="true"></span></a></li>
-                    <li title="Friend Requests"><a href="#"><span class="glyphicon glyphicon-user" aria-hidden="true"></span></a></li>
-                    <li title="Messages"><a href="#"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span></a></li>
-                    <li title="Notifications"><a href="#"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span></a></li>
+                    <li class="top-menu-divider"></li>
+                    <li><a href="#">Home</a></li>
+                    <li class="top-menu-divider"></li>
+                    <li><a href="#">Find Friends</a></li>
+                    <li title="Home">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-home" aria-hidden="true"></span>
+                      </a>
+                    </li>
+                    <li title="Friend Requests">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+                        <span class="badge notification-count">2</span>
+                      </a>
+                    </li>
+                    <li title="Messages">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-envelope" aria-hidden="true"></span>
+                        <span class="badge notification-count">5</span>
+                      </a>
+                    </li>
+                    <li title="Notifications">
+                      <a href="#">
+                        <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+                        <span class="badge notification-count">3</span>
+                      </a>
+                    </li>
+                    <li class="top-menu-divider"></li>
                     <li title="Help"><a href="#"><span class="glyphicon glyphicon-question-sign" aria-hidden="true"></span></a></li>
                     <li title="Options" class="dropdown">
-                      <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
+                      <a href="#" id="navbar-dropdown" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><span class="caret"></span></a>
                       <ul class="dropdown-menu">
                         <li><a href="#">Action</a></li>
                         <li><a href="#">Another action</a></li>
