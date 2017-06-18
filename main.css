@@ -265,6 +265,17 @@ body {
   padding: 5px 5px 5px 10px;
 }
 
+.panel-heading.event-header {
+  color: #90949c;
+  padding: 5px 5px 5px 10px;
+  font-weight: bold;
+}
+
+#sidebar .panel.panel-default .panel-body {
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
 .trending {
   flex: 1;
   font-size: 13px;
@@ -273,19 +284,23 @@ body {
   color: #90949c;
 }
 
-.news-icon {
+.news-icon, .event-icon {
   float: left;
   margin-left: 0;
   margin-right: 5px;
 }
 
-.news-content {
+.news-content, .event-content {
   overflow: hidden;
 }
 
-.news {
+.news, .event {
   padding: 0;
   border: none;
+}
+
+.event a {
+  font-weight: bold;
 }
 
 .comment-options a {
