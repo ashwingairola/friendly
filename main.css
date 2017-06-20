@@ -94,14 +94,19 @@ body {
   line-height: 28px;
 }
 
-.top-menu-divider {
-  border-right: 1px solid rgba(0,0,0,0.2);
+.divider-link {
+  border-left: 1px solid rgba(0,0,0,0.2);
   height: 28px;
 }
 
 .navbar-brand {
   padding: 0;
-  line-height: 1.5;
+  height: 24px;
+}
+
+.navbar-brand .logo {
+  height: 25px;
+  width: 25px;
 }
 
 body {
@@ -109,8 +114,9 @@ body {
 	padding-bottom: 40px;
 } /* In order to prevent overlay due to the fixed navbar on top of the page. */
 
-.list-heading {
-	padding: 20px 15px 0 15px;
+#menu .list-heading {
+	padding: 10px 15px 0 0;
+  color: #4b4f56;
 }
 
 .nav.nav-pills.nav-stacked a {
@@ -378,4 +384,59 @@ body {
 #suggested-pages-carousel > .carousel-inner > .item > img, #suggested-pages-carousel > .carousel-inner > .item > a > img {
     width: 100%;
     height: 150px;
+}
+
+/* Styles to make the navbar look good on mobile devices */
+@media screen and (max-width: 767px) {
+  #friendly-navbar {
+    background-color: #f5f5f5;
+    max-height: 100%;
+    overflow: auto;
+  }
+
+  #search-box {
+    max-width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  #top-menu>ul>li>a {
+    color: black;
+    font-weight: normal;
+    line-height: normal;
+  }
+
+  #top-menu li {
+    border-bottom: 1px solid #e5e5e5;
+    border-left: 0;
+    border-right: 0;
+  }
+
+  #top-menu .thumbnail {
+    float: right;
+  }
+
+  .badge.notification-count {
+    position: relative;
+    float: right;
+  }
+
+  .navbar-brand {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-left: 30px;
+  }
+
+  .navbar-brand .logo {
+    height: auto;
+    width: auto;
+  }
+
+  .navbar-header .navbar-toggle {
+    margin-right: 30px;
+  }
+
+  .nav.navbar-default.navbar-fixed-bottom {
+    display: none;
+  }
 }
